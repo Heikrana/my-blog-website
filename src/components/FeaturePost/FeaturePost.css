@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family==Montserrat:wght@300&display=swap');
+.heading>h2 {
+   border: 1px solid black;
+   display: inline-block;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: lighter;
+   letter-spacing: 0.3rem;
+   padding: 3rem;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+}
+
+.card {
+   border: 1px solid black;
+}
+
+.container {
+   margin-left: 20rem;
+   margin-right: 22rem;
+}
+
+img {
+   width: 100%;
+}
