@@ -56,14 +56,16 @@
    margin-bottom: 0.5rem;
 }
 
-.message {
+.footer-heading {
    font-family: 'DM Serif Display', serif;
    font-size: 2.5rem;
    margin: 1rem;
+   margin-left: 10rem;
+   margin-right: 5rem;
    margin-top: 3rem;
    margin-bottom: 2rem;
 }
 
-.newsletter-body {
+.flex {
    display: flex;
 }

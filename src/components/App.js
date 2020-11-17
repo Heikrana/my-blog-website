@@ -4,7 +4,7 @@ import Header from "./Header/Header";
 import Navbar from "./Navbar/Navbar";
 import FeaturePost from "./FeaturePost/FeaturePost";
 import Newsletter from "./Newsletter/Newsletter";
-import Footer from "./Footer";
+import Review from "./Review/Review";
 
 const App = () => {
    return (
@@ -13,7 +13,7 @@ const App = () => {
          <Navbar />
          <FeaturePost />
          <Newsletter />
-         <Footer />
+         {/* <Review /> */}
       </Fragment>
    );
 };
