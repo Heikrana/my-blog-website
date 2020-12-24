@@ -24,11 +24,11 @@ connection.once("open", () => {
    console.log("mongoDB connection established successfully");
 });
 
-app.get("/", (req, res) => {
-   res.send("<h1>Hello Elliot</h1>");
-});
+const root = require("./routes/root");
 
-const PORT = process.env.PORT || 3000;
+app.use("/", root);
+
+const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
    console.log(`App is running @ Port - ${PORT}`);
