@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@300&display=swap');
 .root {
+   margin-top: 6rem;
    margin-left: auto;
    margin-right: auto;
    text-align: center;
@@ -9,6 +10,7 @@
    font-family: 'DM Serif Display', serif;
    font-size: 7rem;
    margin: 1rem;
+   margin-bottom: 2rem;
 }
 
 .small-heading {

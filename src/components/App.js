@@ -1,4 +1,5 @@
 import React, {Fragment} from "react";
+import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
 import Header from "./Header/Header";
 import Navbar from "./Navbar/Navbar";
@@ -6,15 +7,18 @@ import FeaturePost from "./FeaturePost/FeaturePost";
 import Newsletter from "./Newsletter/Newsletter";
 // import Review from "./Review/Review";
 
+import Test from "./Test";
+
 const App = () => {
    return (
-      <Fragment>
+      <Router>
          <Header />
          <Navbar />
-         <FeaturePost />
-         <Newsletter />
+         <Route path="/" exact component={FeaturePost} />
+         <Route path="/" exact component={Newsletter} />
+         <Route path="/test" component={Test} />
          {/* <Review /> */}
-      </Fragment>
+      </Router>
    );
 };
 
