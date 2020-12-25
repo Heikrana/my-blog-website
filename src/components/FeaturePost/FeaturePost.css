@@ -6,6 +6,7 @@
    font-family: 'Montserrat', sans-serif;
    font-weight: lighter;
    letter-spacing: 0.3rem;
+   margin-left: 7.9rem;
    padding: 3rem;
    padding-top: 1rem;
    padding-bottom: 1rem;
@@ -13,6 +14,10 @@
 
 .card {
    border: 1px solid black;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 80%;
 }
 
 .card-text {

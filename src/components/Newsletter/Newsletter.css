@@ -30,9 +30,13 @@
 }
 
 .input>input {
+   background-color: #fff;
    border: none;
    border-bottom: 1px solid black;
-   padding-bottom: 0.7rem;
+   height: 2.2rem;
+   font-size: large;
+   font-weight: 300;
+   color: rgb(100, 98, 98);
 }
 
 .input>input:focus, .input>input:hover {
@@ -50,9 +54,10 @@
 }
 
 .input>label {
-   color: gray;
+   color: #181717ea;
    display: block;
-   font-weight: 600;
+   font-weight: bold;
+   font-size: larger;
    margin-bottom: 0.5rem;
 }
 

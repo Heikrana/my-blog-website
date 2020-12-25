@@ -1,3 +1,3 @@
 # Simple Blog Website
 
-## This is front-end part made with react
+A simple blog website, as part of 2nd year project.
