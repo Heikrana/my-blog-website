@@ -6,8 +6,7 @@ import Navbar from "./Navbar/Navbar";
 import FeaturePost from "./FeaturePost/FeaturePost";
 import Newsletter from "./Newsletter/Newsletter";
 // import Review from "./Review/Review";
-
-import Test from "./Test";
+import Article from "./Article/Article";
 
 const App = () => {
    return (
@@ -16,7 +15,7 @@ const App = () => {
          <Navbar />
          <Route path="/" exact component={FeaturePost} />
          <Route path="/" exact component={Newsletter} />
-         <Route path="/test" component={Test} />
+         <Route path="/read" component={Article} />
          {/* <Review /> */}
       </Router>
    );

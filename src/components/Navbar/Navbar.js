@@ -8,16 +8,24 @@ const Navbar = () => {
       <Fragment>
          <hr />
          <ul className="links">
-            <Link to="/" className="link">
-               <li href="www.pacman.live" className="linkChild link1">Home</li>
+            <Link to="/">
+               <li href="www.pacman.live" className="link link1">Home</li>
             </Link>
-            <Link to="/test" className="link">
-               <li href="www.pacman.live" className="linkChild link2">About</li>
+            <Link to="/read">
+               <li href="www.pacman.live" className="link link2">About</li>
             </Link>
-            <li href="www.pacman.live" className="linkChild link3">Contact</li>
-            <li href="www.pacman.live" className="linkChild link4">Social</li>
-            <li href="www.abcd.com" className="linkChild link5">SignIn</li>
-            <li href="www.abcd.com" className="linkChild link6">SignUp</li>
+            <Link to="/contact">
+               <li href="www.pacman.live" className="link link3">Contact</li>
+            </Link>
+            <Link to="/social">
+               <li href="www.pacman.live" className="link link4">Social</li>
+            </Link>
+            <Link to="/signin">
+               <li href="www.abcd.com" className="link link5">SignIn</li>
+            </Link>
+            <Link to="/signup">
+               <li href="www.abcd.com" className="link link6">SignUp</li>
+            </Link>
          </ul>
          <hr />
       </Fragment>
