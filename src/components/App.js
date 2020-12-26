@@ -6,6 +6,7 @@ import Navbar from "./Navbar/Navbar";
 import FeaturePost from "./FeaturePost/FeaturePost";
 import Newsletter from "./Newsletter/Newsletter";
 // import Review from "./Review/Review";
+import List from "./articleList/articleList";
 import Article from "./Article/Article";
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
          <Navbar />
          <Route path="/" exact component={FeaturePost} />
          <Route path="/" exact component={Newsletter} />
+         <Route path="/" exact component={List} />
          <Route path="/read" component={Article} />
          {/* <Review /> */}
       </Router>

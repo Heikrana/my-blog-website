@@ -10,7 +10,7 @@ class FeaturePost extends Component {
                <div className="heading">
                   <h2>FEATURED POST</h2>
                </div>
-               <div className="card">
+               <div className="card-primary">
                   <img src="https://static.wixstatic.com/media/c22c23_89024a2cd2e943a6b89d99404958e3bb~mv2.jpg/v1/fill/w_1128,h_635,fp_0.50_0.50,q_90/c22c23_89024a2cd2e943a6b89d99404958e3bb~mv2.jpg"
                      alt="book"></img>
                   <div className="card-text">

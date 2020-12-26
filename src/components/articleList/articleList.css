@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family==Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+.card-secondary {
+   border: 1px solid black;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 60%;
+}
+
+.card-text-list {
+   margin: 2rem;
+   margin-bottom: 0.75rem;
+}
+
+.card-text-list>h3 {
+   font-family: 'Work Sans', sans-serif;
+   font-size: 2rem;
+   margin-top: 0;
+   margin-bottom: 0;
+   margin-left: 50%;
+   max-width: 65%;
+}
+
+.card-text-list>p {
+   font-family: 'Montserrat', sans-serif;
+   margin-left: 50%;
+   max-width: 65%;
+}
+
+.views {
+   margin-bottom: 0;
+   padding-top: 0.3rem;
+   padding-bottom: 0.25rem;
+}
+
+.img-list {
+   display: grid;
+   float: left;
+}
+
+.img-list>img {
+   max-height: 93.5%;
+}
+
+.sub_heading>h2 {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 2rem;
+   font-weight: lighter;
+   letter-spacing: 0.15rem;
+   padding: 2rem;
+   padding-top: 4rem;
+   text-align: center;
+}

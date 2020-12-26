@@ -12,7 +12,7 @@
    padding-bottom: 1rem;
 }
 
-.card {
+.card-primary {
    border: 1px solid black;
    display: block;
    margin-left: auto;
