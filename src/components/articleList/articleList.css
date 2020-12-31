@@ -2,10 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
 .card-secondary {
    border: 1px solid black;
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   width: 60%;
 }
 
 .card-text-list {
@@ -28,19 +24,22 @@
    max-width: 65%;
 }
 
-.views {
-   margin-bottom: 0;
-   padding-top: 0.3rem;
-   padding-bottom: 0.25rem;
+.grid-container {
+   display: grid;
+   grid-template-columns: 1fr 1fr auto;
 }
 
-.img-list {
+/* .img-list {
    display: grid;
    float: left;
-}
+} */
 
 .img-list>img {
    max-height: 93.5%;
+}
+
+.posts {
+   margin: 3rem;
 }
 
 .sub_heading>h2 {
@@ -51,4 +50,10 @@
    padding: 2rem;
    padding-top: 4rem;
    text-align: center;
+}
+
+.views {
+   margin-bottom: 0;
+   padding-top: 0.3rem;
+   padding-bottom: 0.25rem;
 }
