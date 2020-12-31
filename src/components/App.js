@@ -8,6 +8,7 @@ import Newsletter from "./Newsletter/Newsletter";
 // import Review from "./Review/Review";
 import List from "./articleList/articleList";
 import Article from "./Article/Article";
+import Signin from "./Authentication/Signin";
 
 const App = () => {
    return (
@@ -16,8 +17,9 @@ const App = () => {
          <Navbar />
          <Route path="/" exact component={FeaturePost} />
          <Route path="/" exact component={Newsletter} />
-         <Route path="/" component={List} />
+         <Route path="/" exact component={List} />
          <Route path="/read" component={Article} />
+         <Route path="/signin" component={Signin} />
          {/* <Review /> */}
       </Router>
    );

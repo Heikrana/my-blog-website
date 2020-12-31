@@ -29,11 +29,6 @@
    grid-template-columns: 1fr 1fr auto;
 }
 
-/* .img-list {
-   display: grid;
-   float: left;
-} */
-
 .img-list>img {
    max-height: 93.5%;
 }
