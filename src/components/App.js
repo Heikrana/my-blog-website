@@ -16,7 +16,7 @@ const App = () => {
          <Navbar />
          <Route path="/" exact component={FeaturePost} />
          <Route path="/" exact component={Newsletter} />
-         <Route path="/" exact component={List} />
+         <Route path="/list" component={List} />
          <Route path="/read" component={Article} />
          {/* <Review /> */}
       </Router>
