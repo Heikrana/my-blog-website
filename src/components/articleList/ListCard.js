@@ -12,11 +12,15 @@ class ListCard extends Component {
       return date;
    }
 
+   countWords(str, len) {
+      return str.split(' ').splice(0, len).join(" ");
+   }
+
    render() {
       const {Heading, Content, Date, img, alt} = this.props.data;
       const length = Content.length;   // number of letters in body
       const readTime = Math.round(length / 450); // average college student reading pace
-      const ContentShort = Content.substring(0, 300) + " ...";
+      const ContentShort = this.countWords(Content, 50) + "...";
       const normalDate = (this.getNormalDate(Date));
       return (
          <Fragment>
