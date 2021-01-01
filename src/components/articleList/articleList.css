@@ -14,14 +14,10 @@
    font-size: 2rem;
    margin-top: 0;
    margin-bottom: 0;
-   margin-left: 50%;
-   max-width: 65%;
 }
 
 .card-text-list>p {
    font-family: 'Montserrat', sans-serif;
-   margin-left: 50%;
-   max-width: 65%;
 }
 
 .grid-container {
@@ -37,15 +33,14 @@
    margin: 3rem;
 }
 
-.sub_heading>h2 {
+/* .sub_heading>h2 {
    font-family: 'Montserrat', sans-serif;
    font-size: 2rem;
    font-weight: lighter;
    letter-spacing: 0.15rem;
    padding: 2rem;
    padding-top: 4rem;
-   text-align: center;
-}
+} */
 
 .views {
    margin-bottom: 0;

@@ -13,7 +13,7 @@ class ListCard extends Component {
    }
 
    render() {
-      const {Heading, Content, Date} = this.props.data;
+      const {Heading, Content, Date, img, alt} = this.props.data;
       const length = Content.length;   // number of letters in body
       const readTime = Math.round(length / 450); // average college student reading pace
       const ContentShort = Content.substring(0, 300) + " ...";
@@ -22,6 +22,9 @@ class ListCard extends Component {
          <Fragment>
             <div className="grid-container posts">
                <div className="card-secondary">
+                  <div className="img-list">
+                     <img src={img} alt={alt} ></img>
+                  </div>
                   <div className="card-text-list">
                      <p>{normalDate} . {readTime} min read</p>
                      <h3>{Heading}</h3>
