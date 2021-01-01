@@ -10,7 +10,7 @@ const List = (props) => {
 
    return (
       <Fragment>
-         <div>{list}</div>
+         <div className="grid-container">{list}</div>
       </Fragment>
    );
 };

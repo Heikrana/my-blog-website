@@ -22,12 +22,12 @@
 
 .grid-container {
    display: grid;
-   grid-template-columns: 1fr 1fr auto;
+   grid-template-columns: 1fr 1fr;
 }
 
-.img-list>img {
+/* .img-list>img {
    max-height: 93.5%;
-}
+} */
 
 .posts {
    margin: 3rem;

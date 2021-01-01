@@ -20,8 +20,9 @@ class ListCard extends Component {
       const normalDate = (this.getNormalDate(Date));
       return (
          <Fragment>
-            <div className="grid-container posts">
-               <div className="card-secondary">
+            {/* <div className="grid-container"></div> */}
+            <div className="posts">
+               <div className="card-secondary grid-item">
                   <div className="img-list">
                      <img src={img} alt={alt} ></img>
                   </div>
