@@ -22,6 +22,6 @@ const userSchema = new Schema({
 	timestamps: true,
 });
 
-const userCredentials = mongoose.model("user-credentials", userSchema);
+const addUser = mongoose.model("user-credentials", userSchema);
 
-module.exports = userCredentials;
+module.exports = addUser;
