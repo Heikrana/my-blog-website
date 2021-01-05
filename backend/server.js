@@ -25,10 +25,10 @@ connection.once("open", () => {
 });
 
 const articles = require("./routes/Articles");
-const users = requite("./routes/Users");
+const users = require("./routes/Users");
 
 app.use("/", articles);
-app.use("/addUser", users);
+app.use("/user", users);
 
 const PORT = process.env.PORT || 5000;
 
