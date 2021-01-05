@@ -9,7 +9,7 @@ router.route("/add").post(async (req, res) => {
       const userName = req.body.userCredentials.userName;
       const Email = req.body.userCredentials.id;
       const Password = req.body.userCredentials.password;
-      const hashedPassword = await bcrypt.hash(Password, 15); //salt rounds 10
+      const hashedPassword = await bcrypt.hash(Password, 10); //salt rounds default = 10
       const newUser = new addUser({userName, Email, Password: hashedPassword});
 
       await newUser.save();
