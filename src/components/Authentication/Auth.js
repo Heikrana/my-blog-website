@@ -1,30 +1,32 @@
 import axios from "axios";
 import React, {Component, Fragment} from "react";
 
-import Signin from "./Signin";
+import Signup from "./Signup";
 
 class Auth extends Component {
-   state = {userCredentials: {}};
+   // state = {userCredentials: {}};
 
-   onFormSubmit = (userCredentials) => {
-      this.setState({
-         userCredentials,
-      });
-   };
-
-   async componentDidMount() {
+   onFormSubmit = async (userCredentials) => {
+      // this.setState({
+      //    userCredentials,
+      // });
       try {
-         const response = axios.post("http:localhost:5000/addUser", {userCredentials});
+         const response = await axios.post("http://localhost:5000/user/add", {userCredentials});
+         console.log(userCredentials);
          console.log(`response from axios post ${response}`);
       } catch (err) {
          console.error(`Error!!! - ${err}`);
       }
+   };
+
+   async componentDidMount() {
+
    }
 
    render() {
       return (
          <Fragment>
-            <Signin onSubmit={this.onFormSubmit} />
+            <Signup onSubmit={this.onFormSubmit} />
          </Fragment>
       );
    }
