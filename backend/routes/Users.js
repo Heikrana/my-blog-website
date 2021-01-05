@@ -1,11 +1,19 @@
 const router = require("express").Router();
 
-let userDetails = require("../models/addUser.model");
+let userCredentials = require("../models/addUser.model");
 
 router.route("/add").post(async (req, res) => {
    try {
-      console.log(req.body);
-      res.json("Work in progress");
+      const userName = req.body.userCredentials.userName;
+      const Email = req.body.userCredentials.id;
+      const Password = req.body.userCredentials.password;
+
+      const newUser = new userCredentials({userName, Email, Password});
+
+      const response = await newUser.save();
+      //console.log(`Response of newUser.save()`, response);
+      res.json("User Added!");
+
    } catch (err) {
       res.status(400).json(`Error!!! - ${err}`);
    }

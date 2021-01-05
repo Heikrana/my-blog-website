@@ -17,10 +17,11 @@ const userSchema = new Schema({
 	Password: {
 		type: String,
 		required: true,
-		unique: true,
 	},
+}, {
+	timestamps: true,
 });
 
-const userDetails = mongoose.model("userDetails", userSchema);
+const userCredentials = mongoose.model("user-credentials", userSchema);
 
-module.exports = userDetails;
+module.exports = userCredentials;
