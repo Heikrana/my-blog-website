@@ -8,7 +8,7 @@ class Signin extends Component {
 
    onFormSubmit(form) {
       form.preventDefault();
-      this.props.onSubmit(this.state.id, this.state.password);
+      this.props.onSubmit(this.state);
    }
 
    render() {
