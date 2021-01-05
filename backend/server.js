@@ -24,9 +24,10 @@ connection.once("open", () => {
    console.log("mongoDB connection established successfully");
 });
 
-const root = require("./routes/root");
+const articles = require("./routes/Articles");
+const users = requite("./routes/Users");
 
-app.use("/", root);
+app.use("/", articles);
 
 const PORT = process.env.PORT || 5000;
 
