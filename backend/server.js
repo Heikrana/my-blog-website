@@ -28,6 +28,7 @@ const articles = require("./routes/Articles");
 const users = requite("./routes/Users");
 
 app.use("/", articles);
+app.use("/addUser", users);
 
 const PORT = process.env.PORT || 5000;
 
