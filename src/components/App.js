@@ -8,7 +8,8 @@ import Newsletter from "./Newsletter/Newsletter";
 // import Review from "./Review/Review";
 import List from "./articleList/articleList";
 import Article from "./Article/Article";
-import Signin from "./Authentication/Signin";
+import Auth from "./Authentication/Auth";
+// import Signin from "./Authentication/Signin";
 
 const App = () => {
    return (
@@ -19,7 +20,7 @@ const App = () => {
          <Route path="/" exact component={Newsletter} />
          <Route path="/" exact component={List} />
          <Route path="/read" component={Article} />
-         <Route path="/signin" component={Signin} />
+         <Route path="/signin" component={Auth} />
          {/* <Review /> */}
       </Router>
    );
