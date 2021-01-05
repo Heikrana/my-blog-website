@@ -12,8 +12,8 @@ class Auth extends Component {
       // });
       try {
          const response = await axios.post("http://localhost:5000/user/add", {userCredentials});
-         console.log(userCredentials);
-         console.log(`response from axios post ${response}`);
+         console.log("response from axios", response.status);
+         response.status === 200 ? alert("Success") : alert("Nope");
       } catch (err) {
          console.error(`Error!!! - ${err}`);
       }
