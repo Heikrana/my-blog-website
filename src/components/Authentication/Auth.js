@@ -13,16 +13,19 @@ class Auth extends Component {
             const response = await axios.post("http://localhost:5000/user/add", {
                userCredentials
             });
-            console.log("response from axios", response.status);
-            response.status === 200 ? alert("Success") : alert("Nope");
+
+            response.status === 200 && alert("Welcome New User!");
+
          } else if (userCredentials.formType === "signin") {
-            const response = await axios.get("http://localhost:5000/user/get", {
+            const response = await axios.post("http://localhost:5000/user/get", {
                userCredentials
             });
-            console.log("response from axios", response.status);
+
+            response.status === 200 && alert("Welcome Back!");
+
          }
       } catch (err) {
-         console.error(`Error!!! - ${err}`);
+         console.error(`Response err - auth.js == ${err}`);
       }
    };
 
