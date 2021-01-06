@@ -16,7 +16,7 @@ class Signin extends Component {
 			<Fragment>
 				<form onSubmit={data => this.onFormSubmit(data)}>
 					<div className="first user">
-						<label for="uname-id">Enter username/email-id</label>
+						<label htmlFor="uname-id">Enter username/email-id</label>
 						<input
 							id="uname-id"
 							type="text"
@@ -27,7 +27,7 @@ class Signin extends Component {
 						></input>
 					</div>
 					<div className="second pass">
-						<label for="password">Enter password</label>
+						<label htmlFor="password">Enter password</label>
 						<input
 							id="password"
 							type="password"
