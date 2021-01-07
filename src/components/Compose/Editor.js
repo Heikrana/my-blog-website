@@ -1,12 +1,12 @@
-import React from "react";
-
-import {Editor} from 'react-draft-wysiwyg';
-// import {EditorState} from 'draft-js';
-import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
+import React, {useState} from "react";
+import ReactQuill from 'react-quill';
+import 'react-quill/dist/quill.snow.css';
 
 const Compose = () => {
+   const [value, setValue] = useState('');
+
    return (
-      <Editor />
+      <ReactQuill theme="snow" value={value} onChange={setValue} />
    );
 };
 
