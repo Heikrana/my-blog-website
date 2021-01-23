@@ -19,7 +19,7 @@ const App = () => {
          <Route path="/" exact component={FeaturePost} />
          <Route path="/" exact component={Newsletter} />
          <Route path="/" exact component={List} />
-         <Route path="/articles" component={Article} />
+         <Route path="/article" component={Article} />
          <Route path="/signin" component={Auth} />
          <Route path="/compose" component={Compose} />
          {/* <Review /> */}
