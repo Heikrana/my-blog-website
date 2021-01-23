@@ -12,11 +12,13 @@ router.route("/").get(async (req, res) => {
 });
 
 router.route("/article").post(async (req, res) => {
-	const heading = req.body.pathname.split("-").join(" ");
+	const id = req.body.pathname;
+	// console.log(id);
 	try {
 		const article = await Article.find({
-			Heading: { $eq: heading },
+			_id: { $eq: id },
 		});
+		// console.log(article);
 		res.json(article);
 	} catch (err) {
 		res.status(400).json("getArticle:", err);

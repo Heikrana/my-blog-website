@@ -20,10 +20,6 @@ class ListCard extends Component {
       return str.split(' ').splice(0, len).join(' ');
    }
 
-   headingNoSpace(str) {
-      return str.split(' ').join('-');
-   }
-
    render() {
       const {Heading, Content, Date, img, alt} = this.props.data;
       const wordCount = this.countWords(Content);
@@ -34,7 +30,7 @@ class ListCard extends Component {
       return (
          <Fragment>
             {/* <div className="grid-container"></div> */}
-            <a className="posts" href={"/article/" + this.headingNoSpace(Heading)}>
+            <a className="posts" href={"/article/" + this.props.id}>
                <div className="card-secondary grid-item">
                   <div className="img-list">
                      <img src={img} alt={alt} ></img>
