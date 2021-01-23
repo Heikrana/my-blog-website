@@ -5,7 +5,7 @@ import ListCard from "./ListCard";
 const List = (props) => {
 
    const list = props.data.map(data => {
-      return <ListCard key={data._id} data={data} />;
+      return <ListCard key={data._id} id={data._id} data={data} />;
    });
 
    return (
