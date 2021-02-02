@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, {Component} from "react";
+import React, {Component, Fragment} from "react";
 
 import "./Article.css";
 
@@ -37,7 +37,9 @@ class Article extends Component {
 
    render() {
       return (
-         <p className="container article">{this.state.data}</p>
+         <Fragment>
+            <p className="container article">{this.state.data}</p>
+         </Fragment>
       );
    }
 }

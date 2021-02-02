@@ -1,4 +1,4 @@
-/*!These rules are written before adding React Router, so don't remove or edit anything*/
+/*!These rules were written before adding React Router, so don't remove or edit anything*/
 
 /* .links>a {
    height: 2rem;
@@ -47,8 +47,12 @@ a:visited {
 .link {
    border-left: 1px solid black;
    padding: 1rem;
-   padding-left: 5.5rem;
+   padding-left: 6.5rem;
    padding-right: 4rem;
+}
+
+.links :last-child > .link {
+   padding-right: 5.5rem;
 }
 
 .link5 {
