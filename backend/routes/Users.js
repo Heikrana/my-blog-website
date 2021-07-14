@@ -34,6 +34,7 @@ router.route("/get").post(async (req, res) => {
       if (response.length == 0) {
          res.status(404).json("Incorrect User");
       } else {
+         console.log(response);
          const password = req.body.userCredentials.password;
          const hash = response[0].Password;
          //compare password hashes

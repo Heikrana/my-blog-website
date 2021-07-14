@@ -11,6 +11,8 @@ import Article from "./Article/Article";
 import Auth from "./Authentication/Auth";
 import Compose from "./Compose/Editor";
 
+import Test2 from "./Test2";
+
 const App = () => {
    return (
       <Router>
@@ -22,6 +24,7 @@ const App = () => {
          <Route path="/article" component={Article} />
          <Route path="/signin" component={Auth} />
          <Route path="/compose" component={Compose} />
+         <Route path="/test" component={Test2} />
          {/* <Review /> */}
       </Router>
    );

@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, { Component, Fragment } from "react";
+import React, {Component, Fragment} from "react";
 
 import Signin from "./Signin";
 import Signup from "./Signup";
@@ -31,26 +31,26 @@ class Auth extends Component {
 		} catch (err) {
 			console.error(`Response err - auth.js == ${err}`);
 		}
-   }
+	};
 
-   componentDidMount() {
-      const signUpButton = document.getElementById('signUp');
-      const signInButton = document.getElementById('signIn');
-      const container = document.getElementById('container');
+	componentDidMount() {
+		const signUpButton = document.getElementById('signUp');
+		const signInButton = document.getElementById('signIn');
+		const container = document.getElementById('container');
 
-      signUpButton.addEventListener('click', () => {
-         container.classList.add("right-panel-active");
-      });
+		signUpButton.addEventListener('click', () => {
+			container.classList.add("right-panel-active");
+		});
 
-      signInButton.addEventListener('click', () => {
-         container.classList.remove("right-panel-active");
-      });
-   }
+		signInButton.addEventListener('click', () => {
+			container.classList.remove("right-panel-active");
+		});
+	}
 
 	render() {
 		return (
 			<Fragment>
-            <div className="auth-container" id="container">
+				<div className="auth-container" id="container">
 					<div className="form-container sign-up-container">
 						<Signup onSubmit={this.onFormSubmit} />
 					</div>
@@ -60,13 +60,13 @@ class Auth extends Component {
 					<div className="overlay-container">
 						<div className="overlay">
 							<div className="overlay-panel overlay-left">
-                        <h1 className="heading1">Welcome Back!</h1>
+								<h1 className="heading1">Welcome Back!</h1>
 								<p className="para">To keep connected with us please login with your personal info</p>
 								<button className="ghost" id="signIn">Sign In</button>
 							</div>
 							<div className="overlay-panel overlay-right">
-                        <h1 className="heading1">Hello, Friend!</h1>
-                        <p className="para">Enter your personal details and start journey with us</p>
+								<h1 className="heading1">Hello, Friend!</h1>
+								<p className="para">Enter your personal details and start journey with us</p>
 								<button className="ghost" id="signUp">Sign Up</button>
 							</div>
 						</div>
