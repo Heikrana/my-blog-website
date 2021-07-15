@@ -11,7 +11,7 @@ class Auth extends Component {
 		try {
 			if (userCredentials.formType === "signup") {
 				const response = await axios.post(
-					"http://localhost:5000/user/add",
+					"/user/add", //localhost
 					{
 						userCredentials,
 					}
@@ -20,7 +20,7 @@ class Auth extends Component {
 				response.status === 200 && alert("Welcome New User!");
 			} else if (userCredentials.formType === "signin") {
 				const response = await axios.post(
-					"http://localhost:5000/user/get",
+					"/user/get", //localhost
 					{
 						userCredentials,
 					}

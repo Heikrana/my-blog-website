@@ -10,7 +10,7 @@ class articleList extends Component {
 
 	async componentDidMount() {
 		try {
-			const response = await axios.get("http://localhost:5000/articles");
+			const response = await axios.get("/articles"); //localhost
 			this.setState({articles: response.data});
 		} catch (err) {
 			console.error(`getArticle-fend ${err}`);
