@@ -4,9 +4,6 @@ let Article = require("../models/article.model");
 
 router.route("/").get(async (req, res) => {
 	try {
-		setTimeout(() => {
-			console.log("unhunhunhun");
-		}, 5000);
 		const articles = await Article.find().limit(); //8
 		res.json(articles);
 	} catch (err) {
