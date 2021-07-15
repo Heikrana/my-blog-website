@@ -1,5 +1,5 @@
 const express = require("express"); //*Find what this is used for
-const cors = require("cors"); //*Find what this is used for
+// const cors = require("cors"); //*Find what this is used for
 const mongoose = require("mongoose"); //*Find what this is used for
 const path = require("path");
 
@@ -7,7 +7,7 @@ require("dotenv").config(); //*Find what this is used for
 
 const app = express(); //*Find what this is used for
 
-app.use(cors()); //*Find what this is used for
+// app.use(cors()); //*Find what this is used for
 app.use(express.json()); //*Find what this is used for
 
 const URI = process.env.ATLAS_URI;
