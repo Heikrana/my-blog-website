@@ -1,6 +1,7 @@
 const express = require("express"); //*Find what this is used for
 const cors = require("cors"); //*Find what this is used for
 const mongoose = require("mongoose"); //*Find what this is used for
+const path = require("path");
 
 require("dotenv").config(); //*Find what this is used for
 
@@ -32,10 +33,10 @@ app.use("/user", users);
 
 // Serve static files in prodoction
 if (process.env.NODE_ENV === "production") {
-	app.use(express.static("client/build"));
-	app.get("*", (req, res) => {
-		res.senFile(path.resolve(__dirname, "client", "build", "index.html"));
-	});
+app.use(express.static("client/build"));
+app.get("*", (req, res) => {
+	res.senFile(path.resolve(__dirname, "client", "build", "index.html"));
+});
 }
 
 const PORT = process.env.PORT || 5000;
