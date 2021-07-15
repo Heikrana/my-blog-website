@@ -12,16 +12,16 @@ app.use(express.json()); //*Find what this is used for
 const URI = process.env.ATLAS_URI;
 
 mongoose.connect(URI, {
-   useNewUrlParser: true,
-   useCreateIndex: true,
-   useUnifiedTopology: true,
+	useNewUrlParser: true,
+	useCreateIndex: true,
+	useUnifiedTopology: true,
 });
 
 const connection = mongoose.connection;
 
 connection.once("open", () => {
-   //todo Find about this 'once' and 'open' command
-   console.log("mongoDB connection established successfully");
+	//todo Find about this 'once' and 'open' command
+	console.log("mongoDB connection established successfully");
 });
 
 const articles = require("./routes/Articles");
@@ -30,8 +30,16 @@ const users = require("./routes/Users");
 app.use("/articles", articles);
 app.use("/user", users);
 
+// Serve static files in prodoction
+if (process.env.NODE_ENV === "production") {
+	app.use(express.static("client/build"));
+	app.get("*", (req, res) => {
+		res.senFile(path.resolve(__dirname, "client", "build", "index.html"));
+	});
+}
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
-   console.log(`App is running @ Port - ${PORT}`);
+	console.log(`App is running @ Port - ${PORT}`);
 });
