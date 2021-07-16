@@ -14,20 +14,13 @@ A simple and elegant design with the most basic color pallet (just black and whi
 
 All the articles and User data (credentials) are stored in NoSQL database. I'm using MongoDB for this purpose (more specifically MongoDB atlas).
 
-<br>
 
 ## In-depth Working
 
-<br>
-
-For front-end, I have created different components for every seperate design element (ReactJS) which gives it a modular design.
-
+For ***front-end***, I have created different components for every seperate design element (ReactJS) which gives it a modular design.
 For instance, the newsletter column (which is not functional just yet) is a different component than the list of articles below it.
 
-<br>
-
-For back-end, I have created two different routes for Articles and User. Both these routes use Express Router function.
-
+For ***back-end***, I have created two different routes for Articles and User. Both these routes use Express Router function.
 In the User Route, **I have used BCrypt to create salted hash of the password before sending it to the cloud database**.
 
 # Features
@@ -48,11 +41,8 @@ Future prospects:
 # Running the project
 
 > Live version:
-<br>
 
 [blog-heikrana.herokuapp.com](https://blog-heikrana.herokuapp.com)
-
-<br>
 
 > Local machine:
 
