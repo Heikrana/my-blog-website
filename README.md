@@ -5,7 +5,7 @@
 
 This is my college project for 2nd year. A simple blog website with WYSIWYG editor and card layout for articles and a simple SignIn/SignUp menu.
 
-Check out the [live demo](blog-heikrana.herokuapp.com) to see the website in action.
+Check out the [live demo](https://blog-heikrana.herokuapp.com) to see the website in action.
 <br><br>
 
 # Introduction
@@ -50,7 +50,7 @@ Future prospects:
 > Live version:
 <br>
 
-[blog-heikrana.herokuapp.com](blog-heikrana.herokuapp.com)
+[blog-heikrana.herokuapp.com](https://blog-heikrana.herokuapp.com)
 
 <br>
 
