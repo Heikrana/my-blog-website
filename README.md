@@ -17,11 +17,11 @@ All the articles and User data (credentials) are stored in NoSQL database. I'm u
 
 ## In-depth Working
 
-For ***front-end***, I have created different components for every seperate design element (ReactJS) which gives it a modular design.
+For **front-end**, I have created different components for every seperate design element (ReactJS) which gives it a modular design.
 For instance, the newsletter column (which is not functional just yet) is a different component than the list of articles below it.
 
-For ***back-end***, I have created two different routes for Articles and User. Both these routes use Express Router function.
-In the User Route, **I have used BCrypt to create salted hash of the password before sending it to the cloud database**.
+For **back-end**, I have created two different routes for Articles and User. Both these routes use Express Router function.
+In the User Route, ***I have used BCrypt to create salted hash of the password before sending it to the cloud database***.
 
 # Features
 
