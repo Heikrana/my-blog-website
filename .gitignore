@@ -6,6 +6,7 @@
 /client/build
 /.pnp
 .pnp.js
+package-lock.json
 
 .env
 # testing
