@@ -1,10 +1,11 @@
-const router = require("express").Router();
+import express from "express";
+import bcrypt from "bcrypt";
 
-const bcrypt = require("bcrypt");
+const router = express.Router();
 
-let User = require("../models/User.model");
+import { User } from "../models/User.model.js";
 
-router.route("/add").post(async (req, res) => {
+router.post("/add", async (req, res) => {
 	try {
 		const userName = req.body.userCredentials.userName;
 		const Email = req.body.userCredentials.id;
@@ -19,7 +20,7 @@ router.route("/add").post(async (req, res) => {
 	}
 });
 
-router.route("/get").post(async (req, res) => {
+router.post("/get", async (req, res) => {
 	try {
 		const response = await User.find({
 			//getting info of user from DB
@@ -49,4 +50,4 @@ router.route("/get").post(async (req, res) => {
 	}
 });
 
-module.exports = router;
+export default router;
